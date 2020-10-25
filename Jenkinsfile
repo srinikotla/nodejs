@@ -1,7 +1,7 @@
 node('master') {
   stage('checkout') {
     checkout([$class: 'GitSCM',
-         branches: [[name: main]],
+         branches: [[name: "main"]],
          userRemoteConfigs: [[url: 'https://github.com/srinikotla/nodejs.git']]
          ])
   }
