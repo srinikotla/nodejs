@@ -1,6 +1,6 @@
 node('master') {
   stage('checkout') {
-    git "https://github.com/srinikotla/nodejs"
+    git "https://github.com/srinikotla/nodejs.git"
   }
 
   stage('build') {
