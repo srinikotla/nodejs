@@ -13,6 +13,7 @@ node('master') {
   stage('test') {
     echo "Unstash the artifacts if needed"
     echo "Run the scan/test"
+  }
 }
 node('master') {
   stage('deploy') {
