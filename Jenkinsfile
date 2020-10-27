@@ -7,11 +7,16 @@ node('master') {
   }
 
   stage('build') {
-    echo "Building.."
+    echo "Building the Node.JS application..."
+    echo "Stash the artifacts"
   }
+  stage('test') {
+    echo "Unstash the artifacts if needed"
+    echo "Run the scan/test"
 }
 node('master') {
   stage('deploy') {
-    echo "Deploying... "
+    echo "Unstash the artifacts"
+    echo "Run the deploy script..."
   }
 }
