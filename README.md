@@ -1,4 +1,6 @@
-# nodejs
+# nodejs 
+Simulated pipeline
+
 Sample repository used for running a Jenkins pipeline
 
 Pre-requisites:
